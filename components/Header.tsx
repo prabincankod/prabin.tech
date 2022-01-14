@@ -1,23 +1,14 @@
 import type { NextPage } from "next";
-import { useState, useEffect } from "react";
-import { Image } from "@chakra-ui/react";
 import { IconButton } from "@chakra-ui/button";
-import { Stack, Flex, Heading, Spacer, VStack } from "@chakra-ui/react";
+import { Flex, Heading, Spacer, VStack } from "@chakra-ui/react";
 import { FaSun, FaMoon, FaGithub } from "react-icons/fa";
 import { useColorMode } from "@chakra-ui/color-mode";
 const Header: NextPage = () => {
   const { colorMode, toggleColorMode } = useColorMode();
   const isDark = colorMode === "dark";
-  const [gitTheme, setGitTheme] = useState(isDark ? "tokyonight" : "default");
-  useEffect(() => {
-    console.log(gitTheme);
-    isDark ? setGitTheme("tokyonight") : setGitTheme("default");
-  }, [colorMode]);
-
   const redirectToGithub = () => {
     window.open("https://github.com/prabincankod", "_blank");
   };
-  const statsUrl = `https://github-readme-stats.vercel.app/api?username=prabincankod&show_icons=true&theme=${gitTheme}`;
 
   return (
     <VStack p={5}>

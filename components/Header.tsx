@@ -18,6 +18,7 @@ const Header: NextPage = () => {
     window.open("https://github.com/prabincankod", "_blank");
   };
   const statsUrl = `https://github-readme-stats.vercel.app/api?username=prabincankod&show_icons=true&theme=${gitTheme}`;
+
   return (
     <VStack p={5}>
       <Flex w="100%">
@@ -41,19 +42,6 @@ const Header: NextPage = () => {
           onClick={toggleColorMode}
         ></IconButton>
       </Flex>
-      <Image
-        src="https://avatars.githubusercontent.com/u/42871240?v=4"
-        borderRadius="full"
-        boxSize="90px"
-      />
-      <Heading
-        size="lg"
-        fontWeight="semibold"
-        color={isDark ? "cyan.400" : "teal.400"}
-      >
-        Prabin Subedi
-      </Heading>
-      <Image src={statsUrl} />
     </VStack>
   );
 };

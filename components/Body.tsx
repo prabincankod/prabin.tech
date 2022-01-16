@@ -14,6 +14,9 @@ const Body = () => {
     isDark ? "1A202C" : "FFF"
   }&hide_rank=true`;
 
+  const streaksUrl = `http://github-readme-streak-stats.herokuapp.com/?user=prabincankod&theme=${gitTheme}&hide_border=true&background=${
+    isDark ? "1A202C" : "FFF"
+  }`;
   return (
     <VStack p={5}>
       <Image
@@ -29,6 +32,7 @@ const Body = () => {
         Prabin Subedi
       </Heading>
       <Image src={statsUrl} />
+      <Image src={streaksUrl} />
     </VStack>
   );
 };

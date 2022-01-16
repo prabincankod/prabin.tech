@@ -14,7 +14,7 @@ const Body = () => {
     isDark ? "1A202C" : "FFF"
   }&hide_rank=true`;
 
-  const streaksUrl = `http://github-readme-streak-stats.herokuapp.com/?user=prabincankod&theme=${gitTheme}&hide_border=true&background=${
+  const streaksUrl = `https://github-readme-streak-stats.herokuapp.com/?user=prabincankod&theme=${gitTheme}&hide_border=true&background=${
     isDark ? "1A202C" : "FFF"
   }`;
   return (

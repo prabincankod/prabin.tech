@@ -5,6 +5,7 @@ const Body = () => {
   const { colorMode, toggleColorMode } = useColorMode();
   const isDark = colorMode === "dark";
   const [gitTheme, setGitTheme] = useState(isDark ? "tokyonight" : "default");
+  //eslint-disable-next-line
   useEffect(() => {
     console.log(statsUrl);
     isDark ? setGitTheme("tokyonight") : setGitTheme("default");
@@ -21,6 +22,7 @@ const Body = () => {
     <VStack p={5}>
       <Image
         src="https://avatars.githubusercontent.com/u/42871240?v=4"
+        alt="prabincankod github image"
         borderRadius="full"
         boxSize="90px"
       />
@@ -31,8 +33,9 @@ const Body = () => {
       >
         Prabin Subedi
       </Heading>
-      <Image src={statsUrl} />
-      <Image src={streaksUrl} />
+      <Image alt="prabincankod's gthub stats" src={statsUrl} />
+
+      <Image alt="prabincankod's github streak" src={streaksUrl} />
     </VStack>
   );
 };

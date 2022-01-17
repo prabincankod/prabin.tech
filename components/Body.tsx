@@ -2,7 +2,7 @@ import { Heading, Image, VStack } from "@chakra-ui/react";
 import { useColorMode } from "@chakra-ui/react";
 import { useState, useEffect } from "react";
 const Body = () => {
-  const { colorMode, toggleColorMode } = useColorMode();
+  const { colorMode } = useColorMode();
   const isDark = colorMode === "dark";
   const [gitTheme, setGitTheme] = useState(isDark ? "tokyonight" : "default");
   //eslint-disable-next-line

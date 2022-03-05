@@ -11,7 +11,7 @@ const Header: NextPage = () => {
   };
 
   const redirectToInstagram = () => {
-    window.open("https://www.instagram.com/prabin.js/", "_blank");
+    window.open("https://www.instagram.com/prabincankod/", "_blank");
   };
 
   return (
